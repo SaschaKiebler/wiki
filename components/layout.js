@@ -1,10 +1,14 @@
+import LeftMenu from "./leftMenu";
 import Nav from "./nav";
 
 export default function Layout ({children}){
 return (
-    <div>
+    <>
+ 
         <Nav/>
+        <LeftMenu/>
+        
         <main>{children}</main>
-    </div>
+    </>
 )
 }
